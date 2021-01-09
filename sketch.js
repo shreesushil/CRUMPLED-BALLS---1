@@ -15,8 +15,7 @@ function setup() {
 
 	engine = Engine.create();
 	world = engine.world;
-	groundSprite=createSprite(width/2, height-10, width,10);
-	groundSprite.shapeColor=color(0)
+	
 
 	
     
@@ -26,8 +25,10 @@ function setup() {
 	box2 = new Box(920,340,15,100);
 	box3 = new Box(1080,340,15,100);
 	paper= new Paper(50,10,20);
+	ground = new Ground(600,395,1200,15);
+	
+
 	Engine.run(engine);
-  
 }
 
 
@@ -38,6 +39,7 @@ function draw() {
   box2.display();
   box3.display();
   paper.display();
+  ground.display();
   drawSprites();
  
 }

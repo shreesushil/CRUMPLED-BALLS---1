@@ -12,7 +12,7 @@ constructor(x, y,radius) {
     this.radius = radius ;
     this.x = x;
     this.y = y;
-    
+    this.image = loadImage("paper.png");
     World.add(world, this.body);
   }
   display(){
